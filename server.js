@@ -21,7 +21,11 @@ if (err) {
     console.error(err)
     return
   }
-console.log(data)
+  const server = http.createServer((req, res) => {
+    res.statusCode = 200
+    res.setHeader('Content-Type', 'text/html')
+    res.end(data)
+  })
 });
 // Define a const `server` as an arrow function using http.createServer. 
 // Use the documentation for the node.js http module. 
@@ -36,8 +40,8 @@ console.log(data)
 
 // Start the `server` const listening on the port defined by argument in your `port` const. 
 // Put the exact message `Server listening on port ${port}` on the console log. 
-
-
-
+server.listen(port, () => {
+    console.log(`Server running at port ${port}`)
+  })
 
 // That's it! You're all done!
