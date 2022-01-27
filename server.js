@@ -14,7 +14,6 @@ const port = args.port;
 if(!port) {
   port = 3000;
 }
-console.log(port);
 // Use the fs module to create an arrow function using `fs.readFile`.
 // Use the documentation for the Node.js `fs` module. 
 // The function must read a file located at `./www/index.html` and do some stuff with it.
