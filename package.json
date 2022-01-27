@@ -2,7 +2,7 @@
   "name": "a01-jomcsp",
   "version": "1.0.0",
   "description": "Assignment 01",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "node server.js",
     "start": "node server.js"
